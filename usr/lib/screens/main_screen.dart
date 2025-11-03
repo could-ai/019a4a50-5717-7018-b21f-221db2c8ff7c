@@ -4,6 +4,7 @@ import 'package:couldai_user_app/screens/game_screen.dart';
 import 'package:couldai_user_app/screens/learn_screen.dart';
 import 'package:couldai_user_app/screens/watch_screen.dart';
 import 'package:couldai_user_app/screens/profile_screen.dart';
+import 'package:couldai_user_app/screens/more_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -21,6 +22,7 @@ class _MainScreenState extends State<MainScreen> {
     LearnScreen(),
     WatchScreen(),
     ProfileScreen(),
+    MoreScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -56,6 +58,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.more_horiz),
+            label: 'Yana',
           ),
         ],
         currentIndex: _selectedIndex,
